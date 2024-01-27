@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav .active {
+    color: #52921B;
+    text-decoration: underline;
+}
+
+nav a {
+    color: #A0A0A0;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+.icons> :nth-child(1) {
+    margin-right: 10px;
+}
+
+Navbar>img {
+    height: 7vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+header .left {
+    line-height: 64px;
+    width: 50%;
+}
+
+header .right {
+    line-height: 64px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.right .logos {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos> :nth-child(1) {
+    width: 20%;
+    height: 20%;
+    margin-top: 15%;
+}
+
+.logos> :nth-child(2) {
+    width: 60%;
+    height: 60%;
+}
+
+.logos> :nth-child(3) {
+    width: 20%;
+    height: 20%;
+    margin-top: 40%;
+}
+
+.left .l-content {
+    margin-left: 10%;
+}
+
+.left .l-content h1 {
+    color: #212121;
+    font-size: 48px;
+}
+
+.left .l-content button {
+    color: #52921B;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 2% 5%;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.left .l-content p {
+    color: #52525B;
+    line-height: 24px;
+    font-size: 16px;
+    width: 350px;
+    margin: 5% 0;
+}
+
+.left .l-content h1 span {
+    color: #52921B;
+}
+
+.Services {
+    background-image: url(Subtract.svg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Services p {
+    color: #A0A0A0;
+    font-size: 14px;
+    margin-top: 1%;
+}
+
+.Services .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+    gap: 5%;
+    width: 100%;
+    margin-top: 5%;
+    height: 200px;
+}
+
+.Services .box {
+    height: 198px;
+    padding-left: 102px;
+    padding-right: 102px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px gray;
+}
+
+
+
+
+/*mobile*/
+@media (max-width:800px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .left {
+        width: 100%;
+    }
+
+    header .right {
+        width: 100%;
+    }
+
+    .right .logos {
+        margin-left: 20%;
+        margin-top: -10%;
+    }
+
+    .Services .boxes {
+        overflow-x: scroll;
+        width: 90%;
+    }
+
+    .Services .boxes :nth-child(1) {
+
+        margin-left: 120%;
+    }
+
+    /*handling scroll bar */
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+        width: 0px;
+        height: 0px;
+    }
+}
