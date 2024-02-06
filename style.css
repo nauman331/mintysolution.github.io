@@ -50,7 +50,7 @@ header nav ul li .active {
 
 /*body*/
 
-main {
+.first-section {
     display: flex;
     padding: 5%;
     flex-direction: row;
@@ -59,29 +59,29 @@ main {
     width: 100%;
 }
 
-main article {
+.first-section article {
     width: 40%;
 }
 
-main article .content {
+.first-section article .content {
     line-height: 64px;
 }
 
-main article .content h1 {
+.first-section article .content h1 {
     color: #212121;
     font-size: xx-large;
 }
 
-main article .content h1 span {
+.first-section article .content h1 span {
     color: #52921B;
 }
 
-main article .content p {
+.first-section article .content p {
     color: #52525B;
     line-height: 24px;
 }
 
-main article button {
+.first-section article button {
     background-color: transparent;
     color: #52921B;
     border: 2px solid #52921B;
@@ -92,30 +92,30 @@ main article button {
 }
 
 
-main section {
+.first-section section {
     width: 50%;
 }
 
-main section figure {
+.first-section section figure {
     width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main section figure :nth-child(2) {
+.first-section section figure :nth-child(2) {
     width: 50%;
     height: 50vh;
 }
 
-main section figure :nth-child(1) {
+.first-section section figure :nth-child(1) {
     height: 15vh;
     width: 15%;
     margin-right: .5rem;
     margin-top: 12vh;
 }
 
-main section figure :nth-child(3) {
+.first-section section figure :nth-child(3) {
     height: 15vh;
     width: 15%;
     margin-top: 30vh;
@@ -199,6 +199,132 @@ article .box {
     -moz-box-shadow: 5px 11px 5px 0px rgba(224, 224, 224, 0.75);
 }
 
+/*Mission and vision section*/
+.mission,
+.vision {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50vh;
+}
+
+.mission section {
+    background-image: url(assets/Polygon1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 47vh;
+    width: 45vw;
+    margin-left: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.vision section {
+    background-image: url(assets/Polygon2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 47vh;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.mission article,
+.vision article {
+    width: 40%;
+    color: #777777;
+    padding: 0 5%;
+    line-height: 40px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E1F2D5;
+    margin: 5% 0;
+    padding: 5% 0;
+}
+
+.contact figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.contact .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.info {
+    text-align: center;
+    line-height: 24px;
+}
+
+.info p {
+    font-weight: bolder;
+}
+
+.one {
+    margin-left: -35%;
+}
+
+.info h6 {
+    color: #777777;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5%;
+    gap: 5%;
+}
+
+
+.form form {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+form input {
+    height: 10vh;
+    width: 30vw;
+    border-bottom: 2px solid #A0A0A0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+form button {
+    height: 10vh;
+    width: 30vw;
+    background-color: #52921B;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+}
+
+form input:hover {
+    border-bottom: 2px solid black;
+}
+
+/*Form section*/
 /*mobile*/
 @media (max-width:800px) {
     .service-section article {
@@ -211,28 +337,28 @@ article .box {
         display: none;
     }
 
-    main article {
+    .first-section article {
         width: 100%;
     }
 
-    main article figure {
+    .first-section article figure {
         width: 100%;
     }
 
-    main article button {
+    .first-section article button {
         padding: 2vh 6vw;
     }
 
     /*body*/
-    main {
+    .first-section {
         flex-direction: column;
     }
 
-    main section {
+    .first-section section {
         width: 100%;
     }
 
-    main section figure {
+    .first-section section figure {
         margin-top: -20%;
         width: 400px;
     }
@@ -255,6 +381,39 @@ article .box {
         -moz-box-shadow: 5px 11px 5px 0px rgba(224, 224, 224, 0.75);
     }
 
+    .mission article,
+    .vision article {
+        line-height: 20px;
+        width: 50%;
+        font-size: xx-small;
+    }
+
+    .mission section,
+    .vision section {
+        height: 40%;
+        width: 60%;
+        font-size: large;
+    }
+
+    /*form*/
+    .form {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    form input {
+        width: 90%;
+    }
+
+    form button {
+        width: 90%;
+        margin-top: 5%;
+    }
+
     /*handling scroll bar */
     ::-webkit-scrollbar {
         width: 0px;
@@ -264,6 +423,7 @@ article .box {
     /* Track */
     ::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey;
+
         border-radius: 0px;
         width: 0px;
         height: 0px;
