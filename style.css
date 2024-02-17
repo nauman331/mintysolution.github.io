@@ -259,21 +259,38 @@ header figure img {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 5%;
+    gap: 2%;
+    padding: 0% 5%;
     width: 100%;
 
 }
 
 article .box {
-    padding: calc(5vh + 5rem) calc(5vw + 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
     background-color: white;
-    border-radius: 8%;
+    border-radius: 16px;
     font-weight: bolder;
     margin-top: 5%;
-    font-size: calc(.6vw + .6rem);
     box-shadow: 5px 11px 5px 0px rgba(224, 224, 224, 0.75);
     -webkit-box-shadow: 5px 11px 5px 0px rgba(224, 224, 224, 0.75);
     -moz-box-shadow: 5px 11px 5px 0px rgba(224, 224, 224, 0.75);
+}
+
+article .box h4 {
+    margin-top: 5%;
+}
+
+article .box h6 {
+    width: 50%;
+    text-align: center;
+    color: #A0A0A0;
+    margin: 5% 0%;
+
 }
 
 /*Form Section*/
@@ -376,11 +393,49 @@ footer figure img {
     width: 2vw;
 }
 
+/*Process*/
+.p-content {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.p-content h6 {
+    color: #52525B;
+}
+
+.p-texts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.p-texts .para {
+    width: 30%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.para h6 {
+    width: 50%;
+    text-align: center;
+    margin-top: 3%;
+}
+
 /*mobile*/
 @media (max-width:800px) {
     .service-section article {
         overflow: auto;
 
+    }
+
+    .p-texts .para {
+        width: 50%;
     }
 
     /*Navbar*/
@@ -449,13 +504,17 @@ footer figure img {
         width: 90vw;
     }
 
-    .service-section article :nth-child(1) {
-        margin-left: 60rem;
+    .marg {
+        margin-left: 20rem;
+    }
+
+    article .box h6 {
+        width: 50vw;
+        text-align: center;
     }
 
     article .box {
-        padding: calc(5vh + 5rem) calc(7vw + 7rem);
-        font-size: calc(1.5vh + 1.5rem);
+        width: 80%;
         box-shadow: 5px 11px 5px 0px rgba(224, 224, 224, 0.75);
         -webkit-box-shadow: 5px 11px 5px 0px rgba(224, 224, 224, 0.75);
         -moz-box-shadow: 5px 11px 5px 0px rgba(224, 224, 224, 0.75);
