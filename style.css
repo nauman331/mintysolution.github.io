@@ -438,6 +438,10 @@ footer figure img {
         width: 50%;
     }
 
+    .para h6 {
+        width: 70%;
+    }
+
     /*Navbar*/
     header nav {
         display: none;
