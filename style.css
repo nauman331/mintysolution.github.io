@@ -44,18 +44,19 @@ header nav ul li a {
     text-decoration: none;
     color: #A0A0A0;
     font-size: calc(.5vw + .5rem);
+    padding-bottom: 20%;
 }
 
 header nav ul li .active {
     color: #52921B;
     font-weight: bold;
-    text-decoration: underline;
+    border-bottom: 2px solid #52921B;
 }
 
 header nav ul li a:hover {
     color: #52921B;
     font-weight: bold;
-    text-decoration: underline;
+    border-bottom: 2px solid #52921B;
 }
 
 header figure img {
